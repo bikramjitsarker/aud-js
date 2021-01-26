@@ -1,0 +1,106 @@
+:root {
+    --aud-color: #8181bd;
+}
+.aud-element {
+    width:300px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.02);
+    background:#fff;
+    overflow: hidden;
+}
+.aud-dark {
+    background: #1e1e1e;
+    color: #f7f7f7;
+}
+.aud-title, .playlist-wrap a{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.audio-progress {
+    width:100%;
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    border-radius: 6px;
+    height: 3px;
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.audio-progress:focus {
+    outline: none;
+}
+.aud-dark .audio-progress {
+    background: #444;
+}
+.audio-progress::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: var(--aud-color);
+    height: 15px;
+    width: 3px;
+    border-radius: 6px;
+}
+.audio-progress::-moz-range-thumb {
+    -moz-appearance: none !important;
+    background-color: var(--aud-color);
+    border: none;
+    height:15px;
+    width: 3px;
+    border-radius: 6px;
+}
+.aud-left, .aud-right {
+    width:50%;
+    float:left;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.aud-right {
+    text-align:right;
+}
+.player-icon {
+    font-size: 32px;
+}
+.aud-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.aud-col {
+    cursor: pointer;
+}
+.playlist-wrap a{
+    color: #8c8b8b;
+    text-decoration: none;
+    margin:5px 0px 0px 0px;
+    transition: all ease .3s;
+    font-weight: normal;
+}
+.aud-dark .playlist-wrap a {
+    color: #ccc;
+}
+.playing {
+    color: var(--aud-color) !important;
+    font-weight: bold !important;
+}
+.playlist-wrap a:hover {
+    color: var(--aud-color);
+}
+.aud-loading {
+    -webkit-animation: aud-loading 2s linear infinite;
+            animation: aud-loading 2s linear infinite;
+}
+@-webkit-keyframes aud-loading{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes aud-loading{
+    100% {
+        transform: rotate(360deg);
+    }
+}

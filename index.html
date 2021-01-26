@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <link rel="stylesheet" href="aud.css" type="text/css"/>
+    <script src="https://kit.fontawesome.com/9a7e2d4ccc.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h1>Vanilla javascript audio player with playlist</h1>
+<div class="container">
+<div id="wrapper-id"></div>
+<div id="wrapper-id-2"></div>
+<div id="wrapper-id-3"></div>
+
+</div><!--container-->
+<script src="aud.js"></script>
+<script>
+    let aud_options = [{
+        wrapper_id: "#wrapper-id",
+        playlist : [
+            {
+                audio_url: "audios/bensound-acousticbreeze.mp3",
+                audio_title: "Problem child"
+            },
+            {
+                audio_url: "audios/bensound-anewbeginning.mp3",
+                audio_title: "You shook me all night long."
+            },
+            {
+                audio_url: "audios/bensound-creativeminds.mp3",
+                audio_title: "Mistress of Christmas"
+            },
+            {
+                audio_url: "audios/bensound-downtown.mp3",
+                audio_title: "Highway to hell"
+            },
+        ],
+        theme: "light",
+        autoplay: true,
+    }];
+    createPlayer(aud_options);
+    //another player with dark theme
+    let aud_options_2 = [{
+        wrapper_id: "#wrapper-id-2",
+        playlist : [
+            {
+                audio_url: "audios/bensound-extremeaction.mp3",
+                audio_title: "Don't look back in anger"
+            },
+            {
+                audio_url: "audios/bensound-happyrock.mp3",
+                audio_title: "(Probably) All In The Mind"
+            },
+            {
+                audio_url: "audios/bensound-ukulele.mp3",
+                audio_title: "Fuckin' in the bushes"
+            },
+        ],
+        theme: 'dark',
+        autoplay: false,
+    }];
+    createPlayer(aud_options_2);
+    //and amother one without playlist
+    let aud_options_3 = [{
+        wrapper_id: '#wrapper-id-3',
+        playlist : [
+            {
+                audio_url: 'audios/bensound-ukulele.mp3',
+                audio_title: 'Don\'t look back in anger'
+            },
+        ],
+        theme: 'light',
+    }];
+    createPlayer(aud_options_3);
+</script>
+</body>
+</html>
