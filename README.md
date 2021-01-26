@@ -1,9 +1,9 @@
 # aud-js
 Vanilla JavaScript audio player
 ## Instructions
-*Add the aud.css and aud.js files inside your <head> tag.
-*Add your own fontawesome.js link inside your <head> tag.
-*Call the createPlayer() function with the following options as shown.
+* Add the aud.css and aud.js files inside your ```<head>``` tag.
+* Add your own fontawesome.js link inside your ```<head>``` tag.
+* Call the ```createPlayer()``` function with the following options as shown.
 ```javascript
 let aud_options_3 = [{
     //wrapper_id is where you want the audio player to appear
