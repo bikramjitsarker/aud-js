@@ -54,7 +54,7 @@ loading_icon : 'fa-sync-alt',
 prev_icon: 'fa-backward',
 next_icon: 'fa-forward',
 ```
-###### Currently there are 2 themes for this audio player. Dark and Light. Simply pass in theme: "dark" or theme: "light". You can also disable auto play by setting autoplay:false.
+Currently there are 2 themes for this audio player. Dark and Light. Simply pass in theme: "dark" or theme: "light". You can also disable auto play by setting autoplay:false.
 
 # [Demo](https://srkr.me/aud)
 
