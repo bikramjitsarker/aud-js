@@ -56,7 +56,6 @@ next_icon: 'fa-forward',
 ```
 Currently there are 2 themes for this audio player. Dark and Light. Simply pass in theme: "dark" or theme: "light". You can also disable auto play by setting autoplay:false.
 
-## [Demo](https://srkr.me/aud)
 
 Sample audios by [Bensound](https://www.bensound.com/)
 
